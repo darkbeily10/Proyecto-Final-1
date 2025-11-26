@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Banco Personal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <header class="cabecera">
+      <h1 class="titulo-principal">Dashboard</h1>
+      <p class="subtitulo">Payments updates</p>
+    </header>
+
+    <div class="cajas-rapidas">
+      <div class="caja-rapida">
+        <small>Transfer via Card number</small>
+        <h3>$1200</h3>
+      </div>
+      <div class="caja-rapida">
+        <small>Other Banks</small>
+        <h3>$150</h3>
+      </div>
+      <div class="caja-rapida">
+        <small>Same Bank</small>
+        <h3>$150</h3>
+      </div>
+      <div class="caja-rapida">
+        <small>To Other Bank</small>
+        <h3>$150</h3>
+      </div>
+    </div>
+
+    <div class="seccion-saldo-tarjeta">
+      <div class="saldo">
+        <p class="texto-saldo">Balance</p>
+        <h1 class="dinero-grande">$1500</h1>
+      </div>
+
+      <div class="tarjeta-mastercard">
+        <img src="./img/tarjeta.jpg" alt="Tarjeta Mastercard" class="imagen-tarjeta">
+      </div>
+    </div>
+
+    <div class="grafico-container">
+      <div class="barras">
+        <div class="barra" style="--alto:20"></div>
+        <div class="barra" style="--alto:40"></div>
+        <div class="barra" style="--alto:80"></div>
+        <div class="barra" style="--alto:95"></div>
+        <div class="barra" style="--alto:85"></div>
+        <div class="barra" style="--alto:70"></div>
+        <div class="barra" style="--alto:60"></div>
+        <div class="barra" style="--alto:50"></div>
+        <div class="barra" style="--alto:40"></div>
+        <div class="barra" style="--alto:30"></div>
+        <div class="barra" style="--alto:25"></div>
+      </div>
+    </div>
+
+    <div class="dos-cajas">
+      <div class="caja-blanca">
+        <h3 class="titulo-caja">Recent Activities</h3>
+        <div class="fila">Water Bill <span class="rojo">-$120</span></div>
+        <div class="fila verde">+ Income Salary <span class="verde-fuerte">+$4500</span></div>
+        <div class="fila">Electric Bill <span class="rojo">-$150</span></div>
+        <div class="fila">Internet Bill <span class="rojo">-$60</span></div>
+      </div>
+
+      <div class="caja-blanca">
+        <h3 class="titulo-caja">Upcoming Payments</h3>
+        <div class="fila-pendiente">Home Rent <span class="naranja">-$1500 (Pending)</span></div>
+        <div class="fila-pendiente">Car Insurance <span class="naranja">-$150 (Pending)</span></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

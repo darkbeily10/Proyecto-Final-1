@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background: #fafbff;
+  padding: 60px 30px;
+  color: #1a1a1a;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cabecera {
+  margin-bottom: 50px;
+}
+.titulo-principal { 
+  font-size: 56px; 
+  font-weight: 900; 
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.subtitulo { 
+  color: #9ca3af;
+  font-size: 16px; 
+  font-weight: 400;
+}
+
+.cajas-rapidas {
+  display: flex;
+  gap: 16px;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+.caja-rapida {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 24px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  min-width: 160px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.caja-rapida:hover { 
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.caja-rapida small { 
+  color: #9ca3af; 
+  font-size: 14px; 
+  display: block;
+  margin-bottom: 8px;
+}
+.caja-rapida h3 { 
+  font-size: 24px; 
+  margin: 0; 
+  font-weight: 700; 
+}
+
+.seccion-saldo-tarjeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 60px 0;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.saldo {
+  flex: 1;
+}
+.texto-saldo { 
+  font-size: 18px; 
+  color: #6b7280; 
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.dinero-grande { 
+  font-size: 88px;
+  font-weight: 900; 
+  line-height: 1;
+  color: #111827;
+}
+
+.tarjeta-mastercard {
+  flex-shrink: 0;
+  perspective: 1000px;
+}
+
+.imagen-tarjeta {
+  width: 380px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    0 8px 20px rgba(59, 130, 246, 0.15);
+  transition: all 0.4s ease;
+  transform: rotateY(5deg);
+}
+
+.imagen-tarjeta:hover {
+  transform: translateY(-10px) rotateY(8deg) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45), 0 15px 30px rgba(59, 130, 246, 0.25);
+}
+
+@media (max-width: 768px) {
+  .imagen-tarjeta { 
+    width: 340px; 
+    transform: rotateY(0deg); 
+  }
+}
+
+.grafico-container {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin: 60px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.barras {
+  display: flex;
+  gap: 8px;
+  height: 180px;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.barra {
+  width: 28px;
+  background: #111827;
+  border-radius: 6px 6px 0 0;
+  height: calc(var(--alto) * 1.6px);
+  transition: 0.3s ease;
+}
+.barra:hover { 
+  background: #3b82f6;
+  transform: scaleY(1.05);
+}
+
+.dos-cajas {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.caja-blanca {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 280px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.titulo-caja { 
+  font-size: 20px; 
+  margin-bottom: 24px; 
+  font-weight: 700; 
+  color: #111827;
+}
+.fila, .fila-pendiente {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  color: #374151;
+}
+.fila:last-child, .fila-pendiente:last-child { 
+  border-bottom: none; 
+}
+.rojo { 
+  color: #ef4444;
+  font-weight: 600;
+}
+.verde-fuerte {
+  color: #10b981; 
+  font-weight: 600; 
+}
+.naranja { 
+  color: #f59e0b; 
+  font-weight: 600; 
+}
+
+@media (max-width: 768px) {
+  .cajas-rapidas { 
+    justify-content: center; 
+  }
+  .seccion-saldo-tarjeta { 
+    flex-direction: column;
+    align-items: stretch; 
+  }
+  .dos-cajas { 
+    flex-direction: column; 
+  }
+  body { 
+    padding: 40px 20px; 
+  }
+}

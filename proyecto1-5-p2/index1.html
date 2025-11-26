@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Empresa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="fondo-degradado">
+  <div class="grid-dashboard">
+
+    <div class="caja caja-expenses">
+      <h3>Expenses</h3>
+      <h1 class="grande">$349K</h1>
+      <p class="porcentaje-rojo">-36% <span class="flecha-down">Down</span></p>
+      <button class="btn-view">View all periods</button>
+    </div>
+
+    <div class="caja caja-customers">
+      <div class="icono-usuario">
+        <img src="./img/icono.png" alt="user">
+      </div>
+      <h3>Customers</h3>
+      <select class="select-cliente">
+        <option>ABC Furniture</option>
+        <option>Income $1346.00</option>
+        <option>Expenses $1000.00</option>
+      </select>
+      <select class="select-cliente">
+        <option>Bank West</option>
+        <option>Income $1346.00</option>
+        <option>Expenses $1000.00</option>
+      </select>
+      <select class="select-cliente">
+        <option>Media group</option>
+        <option>Income $1346.00</option>
+        <option>Expenses $1000.00</option>
+      </select>
+    </div>
+
+    <div class="caja caja-money">
+      <div class="tabs-periodo">
+        <span class="tab">Day</span>
+        <span class="tab">Week</span>
+        <span class="tab">Month</span>
+      </div>
+      <div class="circulo-grafico">
+        <div class="anillo"></div>
+        <div class="centro">$2000</div>
+      </div>
+      <p class="texto-money">Money Spent</p>
+      <div class="leyenda-grafico">
+        <span><span class="punto azul"></span> Spent</span>
+        <span><span class="punto naranja"></span> Referral</span>
+      </div>
+    </div>
+
+    <div class="caja caja-archivos">
+      <h3>Files and additional materials</h3>
+      <div class="lista-archivos">
+        <div class="item-archivo">
+          <span class="icono-file"></span>
+          <div class="info-item">
+            <strong>Cost accounting analytics</strong>
+            <div class="meta">@admin1 <span class="tag tag-naranja">Data validation</span></div>
+          </div>
+        </div>
+        <div class="item-archivo">
+          <span class="icono-key"></span>
+          <div class="info-item">
+            <strong>Key entry</strong>
+            <div class="meta">@admin1 <span class="tag tag-morado">Dealer order</span></div>
+          </div>
+        </div>
+        <div class="item-archivo">
+          <span class="icono-price"></span>
+          <div class="info-item">
+            <strong>Price group</strong>
+            <div class="meta">@admin1 <span class="tag tag-naranja">Data validation</span></div>
+          </div>
+        </div>
+        <div class="item-archivo">
+          <span class="icono-list"></span>
+          <div class="info-item">
+            <strong>Nomenclature in prices</strong>
+            <div class="meta">@admin1 <span class="tag tag-morado">Dealer order</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="caja caja-overview">
+      <h2>Overview</h2>
+      <div class="item-overview">
+        <img src="./img/cubo.png" alt="income" class="icono-cubo">
+        <div>
+          <div class="titulo-item">Income</div>
+          <strong class="valor-verde">$590K <span class="flecha-up">Up</span></strong>
+        </div>
+      </div>
+      <div class="item-overview">
+        <img src="./img/triangulo.png" alt="net" class="icono-grafico">
+        <div>
+          <div class="titulo-item">Net income</div>
+          <strong class="valor-rojo">$49K <span class="flecha-down">Down</span></strong>
+        </div>
+      </div>
+      <button class="btn-details">View details</button>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
